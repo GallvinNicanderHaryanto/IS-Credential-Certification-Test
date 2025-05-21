@@ -58,5 +58,12 @@ namespace Libraryku
             f5.Show();
             this.Hide();
         }
+
+        private void btnAddpicture_Click(object sender, EventArgs e)
+        {
+            Form9 f9 = new Form9();
+            f9.Show();
+            this.Hide();
+        }
     }
 }

@@ -38,6 +38,8 @@
             this.btnReturnBook = new System.Windows.Forms.Button();
             this.btnAddBorrow = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnAddpicture = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnBook
@@ -158,12 +160,37 @@
             this.label4.TabIndex = 22;
             this.label4.Text = "Admin Master";
             // 
+            // btnAddpicture
+            // 
+            this.btnAddpicture.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnAddpicture.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddpicture.ForeColor = System.Drawing.Color.White;
+            this.btnAddpicture.Location = new System.Drawing.Point(370, 494);
+            this.btnAddpicture.Name = "btnAddpicture";
+            this.btnAddpicture.Size = new System.Drawing.Size(149, 93);
+            this.btnAddpicture.TabIndex = 23;
+            this.btnAddpicture.Text = "Add Picture";
+            this.btnAddpicture.UseVisualStyleBackColor = false;
+            this.btnAddpicture.Click += new System.EventHandler(this.btnAddpicture_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(207, 520);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(110, 33);
+            this.label5.TabIndex = 24;
+            this.label5.Text = "Picture";
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.ClientSize = new System.Drawing.Size(835, 590);
+            this.ClientSize = new System.Drawing.Size(835, 599);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.btnAddpicture);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnReturnBook);
             this.Controls.Add(this.btnAddBorrow);
@@ -194,5 +221,7 @@
         private System.Windows.Forms.Button btnReturnBook;
         private System.Windows.Forms.Button btnAddBorrow;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnAddpicture;
+        private System.Windows.Forms.Label label5;
     }
 }
